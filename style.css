@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #000, #fff);
+}
+
+#ap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  font-size: 1.5rem;
+}
+
+#ap > h1 {
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+#ap > input {
+  margin: 1rem;
+  width: 50%;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 5rem;
+}
+
+#output {
+  color: #ddd;
+  font-size: 1.5rem;
+}
+
+#btn {
+  /* width: 5rem; */
+  font-size: 1.5rem;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
