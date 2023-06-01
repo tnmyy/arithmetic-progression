@@ -23,10 +23,13 @@ btn.addEventListener("click", () => {
   let sum = (An / 2) * (2 * A1 + (An - 1) * D);
   sumAP.innerHTML = `The sum of ${An} Terms is: ${sum}`;
 
-  for (i = 0; i < Array.from(an).length; i++) {
-    let ap = a1 + i;
-    AP.innerHTML = `The Arithmetic Progression is: ${ap}`;
+  let apSequence = [];
+  for (let i = 0; i < An; i++) {
+    let ap = A1 + i * D;
+    console.log(i);
+    apSequence.push(ap);
   }
+  AP.innerHTML = `The Arithmetic Progression is: ${apSequence.join(", ")}`;
 
   event.preventDefault();
 });
