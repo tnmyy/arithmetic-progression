@@ -6,12 +6,13 @@
 }
 
 .container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg, #000, #fff);
+  height: 100%;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 }
 
 #ap {
@@ -38,8 +39,18 @@
 }
 
 #output {
-  color: #ddd;
+  color: #242323;
   font-size: 1.5rem;
+  padding: 3rem;
+  text-align: justify;
+}
+
+#output > h3 {
+  padding: 1rem;
+}
+
+.Output {
+  font-weight: 500;
 }
 
 #btn {

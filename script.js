@@ -8,6 +8,8 @@ btn.addEventListener("click", () => {
   const outputAP = document.getElementById("nthTerm");
   const sumAP = document.getElementById("sumAP");
   const AP = document.getElementById("AP");
+  const outputTerm = document.getElementById("term1");
+  const outputTerm2 = document.getElementById("term2");
 
   let a1 = firstTerm.value;
   let an = nthTerm.value;
@@ -18,10 +20,10 @@ btn.addEventListener("click", () => {
   let D = Number.parseInt(d);
 
   let nth = A1 + (An - 1) * D;
-  outputAP.innerHTML = `The ${An}th Term is: ${nth}`;
+  outputAP.innerHTML = ` ${nth}`;
 
   let sum = (An / 2) * (2 * A1 + (An - 1) * D);
-  sumAP.innerHTML = `The sum of ${An} Terms is: ${sum}`;
+  sumAP.innerHTML = ` ${sum}`;
 
   let apSequence = [];
   for (let i = 0; i < An; i++) {
@@ -29,7 +31,16 @@ btn.addEventListener("click", () => {
     console.log(i);
     apSequence.push(ap);
   }
-  AP.innerHTML = `The Arithmetic Progression is: ${apSequence.join(", ")}`;
+  AP.innerHTML = ` ${apSequence.join(", ")}`;
 
+  // Color
+
+  outputAP.style.color = "#6a6d76";
+  sumAP.style.color = "#6a6d76";
+  AP.style.color = "#6a6d76";
+
+  // Output nth Term
+  outputTerm.innerHTML = `${An}th`;
+  outputTerm2.innerHTML = `${An}th`;
   event.preventDefault();
 });
