@@ -42,5 +42,11 @@ btn.addEventListener("click", () => {
   // Output nth Term
   outputTerm.innerHTML = `${An}th`;
   outputTerm2.innerHTML = `${An}th`;
+
+  // Console output
+  console.log(`The first term ${A1}`);
+  console.log(`The common difference ${An}`);
+  console.log(`The number of terms ${D}`);
+
   event.preventDefault();
 });
